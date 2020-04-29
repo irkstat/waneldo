@@ -1,0 +1,8 @@
+//Обнуление отступов
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "global/config.scss";
+@import "global/header.scss";
