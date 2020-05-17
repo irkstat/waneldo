@@ -1,0 +1,80 @@
+.main_index{
+    // border: 3px solid indigo;
+    font-family: $global-font;
+    .box_products{
+        max-width: $global-width;
+        padding: 50px $global-padding;
+        border: 1px solid firebrick;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(20, 50px);
+        grid-gap: 20px;
+        //Эксклюзивная продукция===========================
+        .exclusive_production{
+            border: 1px solid $global-border-color-gray;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            grid-row: 1/7;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            .title_exclusive_production{
+                background: rgb(20, 20, 20);
+                color: white;
+                height: 50px;
+                text-transform: uppercase;
+                border-radius: 5px;
+                font-weight: 300;
+                letter-spacing: 1px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            //Эксклюзив====================================
+            .data_exclusive_production{
+                // border: 1px solid red;
+                display: flex;
+                height: 90px;
+                align-items: center;
+                padding: 0px 15px;
+                .img_exclusive_production{
+                    width: 60px;
+                    height: 60px;
+                    background: gray;
+                    margin-right: 20px;
+                }
+                .txt_exclusive_production{
+                    .link_pruduction{
+                        color: black;
+                        text-decoration: none;
+                        font-size: 16px;
+                        span{
+                            font-weight: 600;
+                        }
+                        &:hover{
+                            color: $global-color;
+                            transition-duration: 0.3s;
+                        }
+                    }
+                    .data_price{
+                        margin-top: 5px;
+                    }
+                    .rating_production{
+                        display: flex;
+                        justify-content: space-between;
+                        color: rgb(255, 128, 12);
+                        font-size: 18px;
+                        width: 90px;
+                    }
+                }
+            }
+            .line_exclusive_production{
+                border: 0.5px solid $global-border-color-gray;
+                width: 91%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
